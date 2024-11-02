@@ -1,7 +1,7 @@
 #include <inttypes.h>
 #include <stdio.h>
 
-#define UPPER 100000
+#define UPPER 1000
 
 int main(void) {
   for (int a = 1; a < UPPER / 2; a++) {
