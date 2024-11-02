@@ -8,4 +8,4 @@ clean:
 	rm -rf $(BINS)
 
 hyperfine: all
-	hyperfine --warmup=100 --runs=100000 $(BINS)
+	hyperfine -N --warmup=100 --runs=100000 $(BINS)
