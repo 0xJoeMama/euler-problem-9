@@ -1,12 +1,16 @@
+#include <inttypes.h>
 #include <stdio.h>
+
+#define UPPER 100000
+
 int main(void) {
-  for (int a = 1; a < 1000; a++) {
+  for (int a = 1; a < UPPER / 2; a++) {
     // mathemagic
-    int b = 1000 * (500 - a) / (1000 - a);
-    int c = 1000 - a - b;
+    int b = UPPER * (UPPER / 2 - a) / (UPPER - a);
+    int c = UPPER - a - b;
     if (a * a + b * b == c * c) {
       printf("a: %d, b: %d, c: %d\n", a, b, c);
-      printf("abc = %d\n", a * b * c);
+      printf("abc = %" PRId64 "\n", (int64_t)a * b * c);
       return 0;
     }
   }
