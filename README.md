@@ -1,7 +1,7 @@
 # euler-problem-9
 As a heads-up the following write-up is in Greek. It is copied over from the original on Piazza.
 Also the code in the [euler_new.c](./euler_new.c) file is an optimization offered in there by a 
-[classmate](@threadexio) who is also on GitHub and has been uploaded after he has given his permission.
+[classmate](https://github.com/threadexio) who is also on GitHub and has been uploaded after he has given his permission.
 
 # Building
 To build this project from source, you need GCC, some implementation of libc as well as GNU Make.
